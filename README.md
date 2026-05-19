@@ -181,12 +181,16 @@ If you don't already have one, create a free account at [Hugging Face](https://h
 7. Click **Create Space**.
 
 #### 3. Upload Project Files
-You can upload files using Git or directly via the Hugging Face web interface:
+You can upload files using Git (see the command reference below) or directly via the Hugging Face web interface:
 *   Click **Files and versions** -> **Add file** -> **Upload files**.
-*   Drag and drop the following files from your local project directory:
-    1.  `app.py`
-    2.  `utils.py`
-    3.  `requirements.txt`
+*   Drag and drop the following files and folders from your local project directory:
+    1.  `streamlit_app.py` (Main entrypoint)
+    2.  `utils.py` (Core utility module)
+    3.  `mock_data.py` (Mock processor script)
+    4.  `mock_data.json` (Mock circulars database)
+    5.  `requirements.txt` (List of dependencies)
+    6.  `components/` (Entire folder containing modular UI scripts)
+    7.  `Test_Data/` (Folder containing sample txt/md reference sheets)
 *   Click **Commit changes to main**.
 
 #### 4. Configure Secure Gemini API Key (Secret Variable)
@@ -199,6 +203,64 @@ Instead of forcing users to type their Gemini API key every time, you can secure
 6. Click **Save**.
 
 Your Space will automatically rebuild and configure! Once built, **ERIA** will run seamlessly on Hugging Face Spaces, automatically pulling the API key securely from the environment without exposing it to the users.
+
+---
+
+## 🛠️ Git & Hugging Face Command Line Reference
+
+Here is the full cheat sheet of Git commands we used to set up the repository, fix image rejections, and successfully deploy to Hugging Face Spaces:
+
+### 1. Initialize and Configure Local Repository
+If you are starting fresh or resetting your Git configuration:
+```bash
+# Initialize a new git repository
+git init
+
+# Create and switch to the main branch
+git checkout -b main
+
+# Set your local developer identity for commits
+git config user.name "Your Name"
+git config user.email "your.email@example.com"
+```
+
+### 2. Rename the Main File for Hugging Face Compatibility
+Hugging Face default Streamlit space expects the entry point file to be `streamlit_app.py`:
+```bash
+# Rename app.py to streamlit_app.py inside git
+git mv app.py streamlit_app.py
+```
+
+### 3. Stage and Commit Files
+Add project files while ignoring temporary caches, local PDF uploads, and heavy media (using rules set in `.gitignore`):
+```bash
+# Stage all files in the directory (skipping ignored files)
+git add .
+
+# Create the initial commit
+git commit -m "Initial commit - Cleaned binary media files"
+```
+
+### 4. Connect and Push to Hugging Face
+Link your local repository to your online Hugging Face Space:
+```bash
+# Add Hugging Face Space repository as a remote
+git remote add huggingface https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME
+
+# Force-push to replace default templates on Hugging Face Space
+git push -u huggingface main --force
+```
+*(When prompted, enter your Hugging Face username, and use your generated **Write Access Token** as the password).*
+
+### 5. Check Repository Status
+```bash
+# View tracked and untracked files
+git status
+
+# Check configured remote URLs
+git remote -v
+```
+
 
 ---
 
