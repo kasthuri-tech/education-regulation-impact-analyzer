@@ -110,3 +110,8 @@ venv.bak/
 *.jpeg
 *.gif
 
+# Temporary and local output folders
+scratch/
+Generated_Reports/
+
+
