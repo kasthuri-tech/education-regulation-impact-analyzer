@@ -1,0 +1,7 @@
+from .executive_summary import render_executive_summary_tab
+from .stakeholder_impact import render_stakeholder_impact_tab
+from .timeline import render_policy_timeline_tab
+from .forecast_readiness import render_forecast_and_readiness_tab
+from .export_report import render_export_report_tab
+from .comparison import render_comparison_tab
+from .styles import inject_custom_styles

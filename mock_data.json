@@ -1,0 +1,590 @@
+{
+  "SAMPLE_DOCUMENTS": {
+    "Academic Bank of Credits (ABC) Implementation": "\nUNIVERSITY GRANTS COMMISSION (UGC)\nNOTIFICATION\nNew Delhi, the 12th May, 2026\n\nNo. F. 1-1/2026(UGC/ABC) — In exercise of the powers conferred by clauses (f) and (g) of sub-section (1) of Section 26 of the University Grants Commission Act, 1956, and in alignment with the National Education Policy (NEP), the UGC hereby notifies the establishment of the Academic Bank of Credits (ABC) in Higher Education Regulations.\n\n1. Short Title and Commencement:\nThese regulations shall be called the University Grants Commission (Establishment and Operationalization of Academic Bank of Credits in Higher Education) Regulations, 2026. They shall come into force with immediate effect.\n\n2. Objectives of the Academic Bank of Credits:\nTo facilitate student mobility across higher education institutions (HEIs) through a formal system of credit accumulation, credit transfer, and credit redemption. ABC is a digital/virtual depository that holds academic credits earned by students from registered HEIs, allowing students to seamlessly exit and re-enter academic programs.\n\n3. Key Provisions & Operational Framework:\n(a) Mandatory Registration: All Central, State, Deemed-to-be, and Private Universities accredited by NAAC with an 'A' grade or above must register with the Academic Bank of Credits portal within six months.\n(b) Credit Deposit: Registered HEIs shall upload student course credits digitally to the ABC ledger under the student's unique ABC ID.\n(c) Credit Validity: Credits deposited in the ABC shall have a maximum shelf life of seven (7) academic years. After seven years, the credits will expire and cannot be redeemed for any academic award.\n(d) Credit Redemption: For awarding degrees, diplomas, or certificates, the credit redemption process shall be initiated by the awarding HEI through the ABC database.\n(e) Multiple Entry and Exit: Students can exit at the end of Year 1 with an Undergraduate Certificate, Year 2 with an Undergraduate Diploma, Year 3 with a Bachelor's Degree, or Year 4 with a Bachelor's Degree with Research, provided they accumulate the minimum required credits:\n   - Certificate: 40 Credits (after Year 1)\n   - Diploma: 80 Credits (after Year 2)\n   - Degree: 120 Credits (after Year 3)\n   - Honours/Research: 160 Credits (after Year 4)\n\n4. Institutional Compliance and Infrastructure:\nEvery registered HEI shall establish an ABC Cell headed by a Nodal Officer. The cell is responsible for mapping academic curricula to national credit frameworks, verifying student transcripts, uploading credit data, and resolving credit validation issues. HEIs must upgrade their IT systems to interface with the national ABC API.\n\n5. Penalties for Non-Compliance:\nHEIs failing to register on the ABC platform or upload student credit logs within the stipulated period shall be liable to penalties, including:\n(a) Suspension of UGC development grants.\n(b) De-recognition of the institution's capacity to admit new students in specific programs.\n(c) Warning letters and negative grading during NAAC reaccreditation.\n",
+    "National Research Foundation (NRF) Research Grant Guidelines": "\nMINISTRY OF EDUCATION\nGOVERNMENT OF INDIA\nNATIONAL RESEARCH FOUNDATION (NRF)\nGUIDELINES FOR SEED FUNDING AND COLLABORATIVE GRANTS\n\nDate: 3rd April, 2026\n\nSubject: Guidelines for the Allocation and Administration of Research Grants under the National Research Foundation (NRF) for Universities and Colleges.\n\nThe Government of India is pleased to announce the operational rules for research funding distributed through the National Research Foundation (NRF). The goal is to seed, grow, and facilitate research in India's universities, colleges, and research institutions.\n\n1. Eligibility and Categorization:\nResearch funding will be distributed across three tiers:\n(a) Category A (Seed Grants): Up to INR 20 Lakhs for early-career faculty members (within 5 years of PhD appointment) to establish laboratory infrastructure and baseline studies.\n(b) Category B (Collaborative Research): Up to INR 1.5 Crores for joint projects involving at least two HEIs, with mandatory involvement of one State Public University or College.\n(c) Category C (Industry-Academia Partnerships): Up to INR 3 Crores for projects co-sponsored by private sector companies, with industry contribution of at least 30% of the total budget.\n\n2. Intellectual Property (IP) and Publishing:\n(a) Open Access Mandate: All research papers resulting from NRF-funded projects must be published in open-access journals. Authors must deposit their preprint and accepted manuscripts in the National Digital Library repository.\n(b) IP Ownership: Intellectual property developed under NRF grants shall reside jointly with the primary institution and the researchers. For Category C, IP licensing rights will be shared with the industry sponsor under fair-use agreements.\n(c) Commercialization Sharing: Net royalties generated from commercialization must be distributed as: 50% to the researchers, 30% to the institution, and 20% back to the NRF revolving research fund.\n\n3. Monitoring, Documentation, and Timelines:\n(a) Semester Reviews: Principal Investigators (PIs) must submit bi-annual progress reports and digital utilization certificates (UCs) via the NRF portal.\n(b) Funding Release: Funds will be released in three annual installments. The second and third installments are strictly conditional on the PI utilizing at least 75% of the previously allocated funds and submitting satisfactory progress logs.\n(c) Zero-Tolerance for Plagiarism: Any instance of academic dishonesty, plagiarism exceeding 10% similarity index, or data fabrication shall lead to the immediate termination of the grant, blacklisting of the PI for 10 years, and recovery of the entire funded amount as government land revenue.\n\n4. Administrative Workload for HEIs:\nEach participating college and university must setup a central Office of Dean (Research & Development). This office will be audited annually by NRF compliance officers. Institutions must maintain transparent financial books, hire project research fellows strictly through national level entrance tests, and manage the procurement of equipment through the government e-Marketplace (GeM) portal.\n"
+  },
+  "MOCK_ANALYSES": [
+    {
+      "keywords": ["academic bank", "abc"],
+      "analysis": {
+        "document_title": "UGC Academic Bank of Credits (ABC) Implementation Guidelines",
+        "category": "Curriculum",
+        "sentiment": "High Compliance Workload",
+        "layman_summary": [
+          "Establishes a unified national digital credit vault called the Academic Bank of Credits (ABC).",
+          "Integrates student credit tracking directly with Digilocker systems for automatic validation.",
+          "Mandates all universities and colleges to register and upload semester transcripts within 30 days of results.",
+          "Enables flexible Multiple Entry and Exit options: Certificate (40 credits), Diploma (80 credits), and Degree (120 credits).",
+          "Establishes strict shelf-life limits: all accumulated credits strictly expire after seven (7) academic years.",
+          "Requires each HEI to establish a local 'ABC Cell' headed by a Nodal Officer to manage mapping schemas.",
+          "Failing to onboard will result in severe penalties including NAAC score cuts and suspension of UGC development grants."
+        ],
+        "stakeholders": {
+          "students": {
+            "positives": [
+              "Complete student mobility allowing credit transfer across different colleges.",
+              "No financial or degree penalty for temporary study drops or exit cycles.",
+              "Direct online credit status logs through verified Digilocker APIs."
+            ],
+            "negatives": [
+              "Credits automatically expire and disappear strictly after 7 academic years.",
+              "Added responsibility to trace credit balances before lateral entry."
+            ],
+            "opportunities": [
+              "Opportunity to earn specialized multi-disciplinary joint degrees.",
+              "Flexible part-time course credit accumulation options."
+            ]
+          },
+          "faculty": {
+            "positives": [
+              "Standardized grading mapping frameworks across state-level colleges.",
+              "Increased educational modularity allowing creative elective course designs."
+            ],
+            "negatives": [
+              "Heavy administrative coursework grading mapping tasks.",
+              "Mandatory alignment of syllabi with rigid national NHEQF credit parameters."
+            ],
+            "opportunities": [
+              "Opportunity to launch high-demand online certificate modules.",
+              "Specialized academic credit mentorship and nodal leadership roles."
+            ]
+          },
+          "institutions": {
+            "positives": [
+              "Standardized national course credit integration and digital transcript indexing.",
+              "Ability to attract a massive volume of returning lateral-entry students."
+            ],
+            "negatives": [
+              "Excessive tech infrastructure setup cost for affiliated colleges.",
+              "Strict 30-day post-exam credit upload timelines.",
+              "Catastrophic penalties including suspension of developmental grants."
+            ],
+            "opportunities": [
+              "Flexible partnerships with state and central universities.",
+              "Corporate skill-based joint program launches."
+            ]
+          },
+          "compliance_accreditation": {
+            "positives": [
+              "100% digital, transparent, paperless academic records audit path.",
+              "Standardized ranking metrics for international credit equivalents."
+            ],
+            "negatives": [
+              "Continuous heavy digital compliance and record audits.",
+              "Tight regulatory compliance windows for Nodal officers."
+            ],
+            "opportunities": [
+              "Direct synchronisation of credit performance logs to NAAC/NIRF scoring engines.",
+              "Standardized quality tracking."
+            ]
+          }
+        },
+        "chronology": [
+          {
+            "event": "Draft Approval of National Education Policy (NEP)",
+            "date": "July 2020",
+            "context": "Laid the mandatory policy blueprint for structural multiple entry-exit academic frameworks."
+          },
+          {
+            "event": "National Academic Depository (NAD) DigiLocker Integration",
+            "date": "September 2021",
+            "context": "Supplied the digital database infrastructure utilized by ABC credit vaults."
+          },
+          {
+            "event": "UGC NHEQF Credit Standardization Matrix Draft",
+            "date": "March 2023",
+            "context": "Formulated standard credit-hour definitions for undergraduate courses."
+          }
+        ],
+        "impact_forecast": {
+          "short_term": [
+            "Immediate registration of HEI campuses on the national ABC directory.",
+            "Digitization and indexing of all legacy student transcript databases.",
+            "Setup of local physical and digital campus ABC Cells."
+          ],
+          "medium_term": [
+            "Full rollout of Certificate and Diploma exit awards.",
+            "Complete update in university admission and counseling software logs.",
+            "UGC reviews actively auditing ABC upload timelines during NAAC grading."
+          ],
+          "long_term": [
+            "Rise of a highly flexible, multi-university educational culture.",
+            "A massive reduction in student drop-out rates without formal credentials.",
+            "Complete digitization of all higher education records in India."
+          ],
+          "risks_and_readiness": [
+            "Severe digital divide and low IT infrastructure in rural public colleges.",
+            "Delays in upload due to local college-level grade disputes.",
+            "Data security risks in credit databases or identity theft on student ABC IDs."
+          ]
+        }
+      }
+    },
+    {
+      "keywords": ["distance", "online", "odl"],
+      "analysis": {
+        "document_title": "UGC Distance and Online Education Second Amendment Regulations",
+        "category": "Accreditation",
+        "sentiment": "Neutral/Procedural",
+        "layman_summary": [
+          "Sets highly strict quality standards for colleges and universities to offer non-traditional distance degrees.",
+          "Mandates a high NAAC score threshold of 3.26 CGPA to qualify for ODL program launches.",
+          "Requires universities to be ranked in the top-100 of the NIRF ranking twice in three years.",
+          "Demands formal prior permission from the Distance Education Bureau (DEB) before launching any new online course.",
+          "Declares that recognized online degrees hold 100% equal validity to traditional offline classroom degrees.",
+          "Imposes mandatory biometric student log verification and computer-based online proctored examinations.",
+          "Applies severe penalty fines of up to INR 10 Lakhs and public blacklisting for unauthorized course launches."
+        ],
+        "stakeholders": {
+          "students": {
+            "positives": [
+              "Complete equivalence of online and offline degrees for job applications.",
+              "Increased access to high-quality university courses from rural areas.",
+              "Flexible self-paced learning schedules."
+            ],
+            "negatives": [
+              "Mandatory computer-based proctored exams under webcam surveillance.",
+              "Higher requirement of personal laptop/internet bandwidth."
+            ],
+            "opportunities": [
+              "Access to double-degree programs simultaneously.",
+              "Direct skill training modules aligned with industry needs."
+            ]
+          },
+          "faculty": {
+            "positives": [
+              "Ability to reach millions of students nationwide.",
+              "Standardized online curriculum and course templates."
+            ],
+            "negatives": [
+              "Higher requirement of video production skills and digital lecturing.",
+              "Added workload in managing online forum queries."
+            ],
+            "opportunities": [
+              "Launching personal courses on university portals.",
+              "Professional training in e-content creation."
+            ]
+          },
+          "institutions": {
+            "positives": [
+              "Significant revenue enhancement by enrolling large online student batches.",
+              "Broader geographic reach without building physical campus branches."
+            ],
+            "negatives": [
+              "High entry barrier (3.26 NAAC CGPA CGPA requirement).",
+              "Substantial investment in learning management systems (LMS) and proctoring tools.",
+              "Huge financial penalties (10 Lakhs) for compliance gaps."
+            ],
+            "opportunities": [
+              "Launching global online degree programs.",
+              "Partnering with corporate EdTech groups."
+            ]
+          },
+          "compliance_accreditation": {
+            "positives": [
+              "Standardized DEB application processes.",
+              "Transparent and automated audit trail via LMS logs."
+            ],
+            "negatives": [
+              "Extreme workload in preparing NAAC/NIRF alignment dossiers.",
+              "Short timelines for submitting biometric log audits."
+            ],
+            "opportunities": [
+              "Digital monitoring of learning achievements.",
+              "Standardized compliance reporting."
+            ]
+          }
+        },
+        "chronology": [
+          {
+            "event": "UGC (ODL and Online Programmes) Basic Regulations",
+            "date": "September 2020",
+            "context": "Laid the initial guidelines for running ODL and online degrees during the pandemic."
+          },
+          {
+            "event": "Biometric Authentication Mandate Draft",
+            "date": "August 2022",
+            "context": "Introduced standard rules to prevent online exam proxy cheating."
+          }
+        ],
+        "impact_forecast": {
+          "short_term": [
+            "Immediate suspension of online programs in universities with NAAC CGPA below 3.26.",
+            "Procurement of advanced computer-based proctoring software solutions.",
+            "Submitting legacy program logs to the DEB portal."
+          ],
+          "medium_term": [
+            "Complete integration of university LMS systems with central UGC registries.",
+            "Launch of modular dual-degree online pathways.",
+            "Establishment of physical regional CBT exam centers."
+          ],
+          "long_term": [
+            "Parity of esteem between online and offline higher education in India.",
+            "Massive expansion in gross enrollment ratios (GER) nationwide.",
+            "Establishment of pure online digital public universities."
+          ],
+          "risks_and_readiness": [
+            "Failure to run secure exams in remote areas with frequent power drops.",
+            "Resistance from traditional faculty members to record video lessons.",
+            "Severe revenue drops in Tier-2 private institutions due to NAAC CGPA exclusion."
+          ]
+        }
+      }
+    },
+    {
+      "keywords": ["research", "nrf"],
+      "analysis": {
+        "document_title": "National Research Foundation (NRF) Research Grant Guidelines",
+        "category": "Scholarship",
+        "sentiment": "Neutral/Procedural",
+        "layman_summary": [
+          "Launches a seed funding and collaborative research grant framework distributed across Tiers.",
+          "Mandates Category A (Seed Grants of 20 L) for early-career faculty members (within 5 years of PhD).",
+          "Requires Category B (Collaborative Grants of 1.5 Cr) and Category C (Industry Partnerships of 3 Cr) with 30% private sector contribution.",
+          "Enforces strict open-access mandates: all papers must be archived in the National Digital Library.",
+          "Imposes zero-tolerance for plagiarism (exceeding 10% similarity) resulting in 10-year blacklisting.",
+          "Establishes mandatory Offices of Dean (R&D) to manage equipment purchases on the GeM portal."
+        ],
+        "stakeholders": {
+          "students": {
+            "positives": [
+              "Substantial increase in graduate research fellowships (JRF/SRF).",
+              "Access to state-of-the-art laboratory equipment."
+            ],
+            "negatives": [
+              "Extremely competitive national entrance exams for fellowship selection."
+            ],
+            "opportunities": [
+              "Joint research publication and industry networking pathways."
+            ]
+          },
+          "faculty": {
+            "positives": [
+              "Significant seed funding (20 Lakhs) for early-career PhD professors.",
+              "Intellectual property ownership shared with researchers."
+            ],
+            "negatives": [
+              "Severe penalties (10-year blacklist) for minor plagiarism gaps.",
+              "High compliance load for filing progress log updates."
+            ],
+            "opportunities": [
+              "Lead large-scale joint collaborative projects with corporate funding."
+            ]
+          },
+          "institutions": {
+            "positives": [
+              "Substantial research infrastructure funding boosts.",
+              "Fosters strong corporate ties and technology transfers."
+            ],
+            "negatives": [
+              "Mandatory establishment of Dean (R&D) offices with audit trails.",
+              "High administrative penalties for fund underutilization."
+            ],
+            "opportunities": [
+              "Positioning as a premier tier research-intensive hub."
+            ]
+          },
+          "compliance_accreditation": {
+            "positives": [
+              "Transparent digital tracking of utilization certificates.",
+              "Highly standardized research outcome benchmarking."
+            ],
+            "negatives": [
+              "Intense semester audits of patent filings and budgets."
+            ],
+            "opportunities": [
+              "Automated research data synchronization with NAAC criteria."
+            ]
+          }
+        },
+        "chronology": [
+          {
+            "event": "National Research Foundation (Anusandhan NRF) Act",
+            "date": "August 2023",
+            "context": "Passed by the Parliament of India to replace the Science and Engineering Research Board (SERB)."
+          },
+          {
+            "event": "NRF Seed Funding Strategy Launch",
+            "date": "September 2025",
+            "context": "Created the framework for early-career faculty seed grant lines."
+          }
+        ],
+        "impact_forecast": {
+          "short_term": [
+            "Immediate registration of HEI campuses on the national ABC directory.",
+            "Digitization and indexing of all legacy student transcript databases.",
+            "Setup of local physical and digital campus ABC Cells."
+          ],
+          "medium_term": [
+            "Full rollout of Certificate and Diploma exit awards.",
+            "Complete update in university admission and counseling software logs.",
+            "UGC reviews actively auditing ABC upload timelines during NAAC grading."
+          ],
+          "long_term": [
+            "Rise of a highly flexible, multi-university educational culture.",
+            "A massive reduction in student drop-out rates without formal credentials.",
+            "Complete digitization of all higher education records in India."
+          ],
+          "risks_and_readiness": [
+            "Severe digital divide and low IT infrastructure in rural public colleges.",
+            "Delays in upload due to local college-level grade disputes.",
+            "Data security risks in credit databases or identity theft on student ABC IDs."
+          ]
+        }
+      }
+    },
+    {
+      "keywords": ["equity", "promotion of equity", "heis", "promoti"],
+      "analysis": {
+        "document_title": "UGC Promotion of Equity in Higher Education Institutions Regulations, 2026",
+        "category": "Institutional Governance",
+        "sentiment": "High Compliance Workload",
+        "layman_summary": [
+          "Mandates the strict prevention of discrimination against SC, ST, OBC, Minorities, Women, and Differently-abled students in all HEIs.",
+          "Requires every university and college to establish a dedicated 'Equal Opportunity Cell' (EOC) within 60 days.",
+          "Mandates the appointment of a senior professor as the 'Anti-Discrimination Officer' (ADO) to head local grievance boards.",
+          "Enforces strict timelines: all discrimination complaints must be investigated and resolved within fifteen (15) working days.",
+          "Prohibits any form of harassment, hate speech, or segregated seating/dining in academic and residential blocks.",
+          "Requires HEIs to publish a transparent student charter outlining safety pathways and anti-discrimination rights.",
+          "Failing to implement these measures will result in severe penalties, including stripping of university status and suspension of research development funds."
+        ],
+        "stakeholders": {
+          "students": {
+            "positives": [
+              "Complete safety and anti-harassment protections on campus.",
+              "Strict 15-day investigation turnaround for any grievance filings.",
+              "Transparent rights charters visible on admission portals."
+            ],
+            "negatives": [
+              "Potential delays if EOC cells are overloaded with general grievance filings."
+            ],
+            "opportunities": [
+              "Student representation on institutional equal opportunity councils.",
+              "Enhanced inclusion programs and sensitivity training resources."
+            ]
+          },
+          "faculty": {
+            "positives": [
+              "Clear rules to enforce classroom equity and inclusive learning."
+            ],
+            "negatives": [
+              "Added responsibility for attending mandatory inclusion workshops.",
+              "Mandatory reports on classroom demographic distributions."
+            ],
+            "opportunities": [
+              "Leadership roles as Nodal Anti-Discrimination Officers."
+            ]
+          },
+          "institutions": {
+            "positives": [
+              "Pristine, highly inclusive campus cultures attracting diverse students."
+            ],
+            "negatives": [
+              "Mandatory setup costs for specialized EOC counseling centers.",
+              "Severe funding suspensions if compliance audits fail."
+            ],
+            "opportunities": [
+              "National equity awards and higher NAAC rating bonuses."
+            ]
+          },
+          "compliance_accreditation": {
+            "positives": [
+              "Strict, standardized equity audits across all universities."
+            ],
+            "negatives": [
+              "High overhead tracking grievance logs across hundreds of departments."
+            ],
+            "opportunities": [
+              "Synchronized equity dashboards for state higher education councils."
+            ]
+          }
+        },
+        "chronology": [
+          {
+            "event": "UGC Equity Baseline Act Drafted",
+            "date": "2012",
+            "context": "Established basic guidelines to address campus discrimination."
+          },
+          {
+            "event": "Mandatory EOC Cell Enactment",
+            "date": "January 2026",
+            "context": "Enforced strict legal penalties and 15-day trial rules for non-compliance."
+          }
+        ],
+        "impact_forecast": {
+          "short_term": [
+            "Establishment of the Equal Opportunity Cell (EOC).",
+            "Appointment of the Anti-Discrimination Officer (ADO).",
+            "Distribution of the Student Equity Rights Charter during admissions."
+          ],
+          "medium_term": [
+            "Campus-wide sensitivity audits and teacher workshops.",
+            "Integration of centralized online anonymous grievance registries."
+          ],
+          "long_term": [
+            "Zero-tolerance inclusive higher education ecosystem nationwide."
+          ],
+          "risks_and_readiness": [
+            "Operational delays in rural Tier-3 colleges with no legal cells.",
+            "Reluctance of students to report peer-to-peer microaggressions."
+          ]
+        }
+      }
+    },
+    {
+      "keywords": ["nyaya", "sanhita", "curricula", "bhartiya"],
+      "analysis": {
+        "document_title": "UGC BNS Law Curricula Recommendations Implementation, 2026",
+        "category": "Curriculum",
+        "sentiment": "High Compliance Workload",
+        "layman_summary": [
+          "Directs all National Law Universities (NLUs) and HEIs offering law courses to incorporate Bhartiya Nyaya Sanhita (BNS) recommendations.",
+          "Mandates students and researchers study the paradigm shift brought by BNS in the criminal justice delivery system.",
+          "Places a strong emphasis on the use of forensic science and the digitization of investigations in law curriculum.",
+          "Encourages law-teaching institutions to undertake case studies on transition challenges from the old IPC/CrPC to the new codes.",
+          "Mandates law schools publish academic studies on these reforms to raise institutional awareness.",
+          "Requires HEIs to submit a formal compliance report detailing integration measures."
+        ],
+        "stakeholders": {
+          "students": {
+            "positives": [
+              "Learning modern legal codes directly aligned with current court practices.",
+              "Enhanced understanding of forensics-driven criminal justice methods."
+            ],
+            "negatives": [
+              "Increased course load to master both old and new legal frameworks side-by-side.",
+              "Higher academic grading thresholds during the transition period."
+            ],
+            "opportunities": [
+              "Publishing transition case studies in UGC-CARE list journals.",
+              "New legal careers in electronic forensics, digital evidence law, and court digitization."
+            ]
+          },
+          "faculty": {
+            "positives": [
+              "Incentives to lead specialized legal research and national seminars."
+            ],
+            "negatives": [
+              "Mandatory syllabus rewriting under short, strict institutional timelines.",
+              "Obligatory participation in forensic training workshops."
+            ],
+            "opportunities": [
+              "Pioneering comparative textbooks mapping IPC vs BNS."
+            ]
+          },
+          "institutions": {
+            "positives": [
+              "Aligned curricula with modern Indian justice delivery reforms."
+            ],
+            "negatives": [
+              "Updating outdated library catalogs, legal databases (SCC, Manupatra), and curriculum standards.",
+              "Strict deadline to report compliance to the Bar Council and UGC."
+            ],
+            "opportunities": [
+              "Collaborative training programs with State Police Academies and Forensic labs."
+            ]
+          },
+          "compliance_accreditation": {
+            "positives": [
+              "Clear guidelines to audit legal curricula modernization."
+            ],
+            "negatives": [
+              "High audit overhead verifying curricular integration across multiple campuses."
+            ],
+            "opportunities": [
+              "Developing digital curriculum-mapping templates for law programs."
+            ]
+          }
+        },
+        "chronology": [
+          {
+            "event": "Enactment of BNS, BNSS, and BSB",
+            "date": "December 2023",
+            "context": "Passed by Parliament to replace IPC 1860, CrPC 1973, and IEA 1872."
+          },
+          {
+            "event": "Official Transition Effective Date",
+            "date": "July 2024",
+            "context": "All new criminal cases registered and prosecuted under new codes."
+          },
+          {
+            "event": "Conference of DGsP/IGsP Recommendations",
+            "date": "November 2025",
+            "context": "DGsP recommended academic integration of BNS transition study."
+          },
+          {
+            "event": "UGC BNS Studies Directive Issued",
+            "date": "May 2026",
+            "context": "UGC issued direct instruction to NLUs and HEIs to integrate BNS recommendations."
+          }
+        ],
+        "impact_forecast": {
+          "short_term": [
+            "Board of Studies meetings to update law curriculum modules.",
+            "Orientation seminars on BNS, BNSS, and forensic science basics."
+          ],
+          "medium_term": [
+            "Development of specialized forensic labs and digital evidence mock-court training.",
+            "Widespread publication of comparative case studies on transition."
+          ],
+          "long_term": [
+            "Legal profession fully transitioned, with new graduates proficient in digital-first justice delivery."
+          ],
+          "risks_and_readiness": [
+            "Lack of trained forensic law instructors in tier-2 and tier-3 law colleges.",
+            "High cost of updating institutional print law libraries."
+          ]
+        }
+      }
+    },
+    {
+      "keywords": [],
+      "analysis": {
+        "document_title": "UGC General Educational Regulation Notification",
+        "category": "General circular",
+        "sentiment": "Neutral/Procedural",
+        "layman_summary": [
+          "Summarizes recent higher education directives and notifications.",
+          "Urges all colleges and universities to align their programs with the national qualifications catalog.",
+          "Directs deans to maintain transparent records and submit digitised compliance files.",
+          "Aims to enhance student mobility and ease regulatory documentation weightings."
+        ],
+        "stakeholders": {
+          "students": {
+            "positives": ["Improved credit flexibility", "Streamlined academic procedures"],
+            "negatives": ["Increased compliance check checkpoints"],
+            "opportunities": ["Multi-university learning paths"]
+          },
+          "faculty": {
+            "positives": ["Standardized curriculum designs"],
+            "negatives": ["Added administrative transcript entries"],
+            "opportunities": ["Nodal leadership responsibilities"]
+          },
+          "institutions": {
+            "positives": ["Enhanced national grading equivalence"],
+            "negatives": ["Continuous digital infrastructure audits", "Severe penalties for delays"],
+            "opportunities": ["Curricular partnership models"]
+          },
+          "compliance_accreditation": {
+            "positives": ["Transparent digitised record pathways"],
+            "negatives": ["High audit filing workloads"],
+            "opportunities": ["Automated NAAC synchronization"]
+          }
+        },
+        "chronology": [
+          {
+            "event": "UGC Guidelines Baseline Setup",
+            "date": "2022",
+            "context": "Established the base guidelines for modern educational credit standards."
+          }
+        ],
+        "impact_forecast": {
+          "short_term": ["Establishment of compliance committees", "Student onboarding on digital registries"],
+          "medium_term": ["Integration of student administrative software systems"],
+          "long_term": ["Parity in educational credit standards across state colleges"],
+          "risks_and_readiness": ["IT gaps in rural campuses", "Delays in compliance data indexing"]
+        }
+      }
+    }
+  ]
+}
