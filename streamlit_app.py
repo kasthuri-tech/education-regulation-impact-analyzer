@@ -1,13 +1,9 @@
 import streamlit as st
 import os
-from utils import (
-    extract_text_from_pdf,
-    scrape_url_content,
-    analyze_regulation,
-    validate_gemini_api_key
-)
-from mock_data import SAMPLE_DOCUMENTS
-from components import (
+from Document_Ingestion_and_Preprocessing.data_extractor import extract_text_from_pdf, scrape_url_content
+from LLM_Summarization_and_Impact_Analysis.gemini_analyzer import analyze_regulation, validate_gemini_api_key
+from Gemini_Model_Integration_and_Testing.mock_data import SAMPLE_DOCUMENTS
+from Streamlit_Dashboard_Components import (
     render_executive_summary_tab,
     render_stakeholder_impact_tab,
     render_policy_timeline_tab,
