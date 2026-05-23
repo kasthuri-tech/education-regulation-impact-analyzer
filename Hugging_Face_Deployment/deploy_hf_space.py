@@ -35,9 +35,11 @@ def main():
     
     print("Step 1: Verifying required files inside project directory...")
     required_files = [
-        "streamlit_app.py", "utils.py", "mock_data.py", "mock_data.json", 
+        "streamlit_app.py", 
+        "Gemini_Model_Integration_and_Testing/mock_data.py", 
+        "Gemini_Model_Integration_and_Testing/mock_data.json", 
         "requirements.txt", "README.md", "Test_Data/UGC_Reference_Links.md",
-        "components/__init__.py"
+        "Streamlit_Dashboard_Components/__init__.py"
     ]
 
     all_exist = True
@@ -72,7 +74,7 @@ def main():
     run_command("git checkout -b main")
     
     # Add files (including new modular components and mock dataset)
-    run_command("git add streamlit_app.py utils.py mock_data.py mock_data.json requirements.txt README.md Test_Data/ components/")
+    run_command("git add streamlit_app.py Document_Ingestion_and_Preprocessing/ LLM_Summarization_and_Impact_Analysis/ Gemini_Model_Integration_and_Testing/ requirements.txt README.md Test_Data/ Streamlit_Dashboard_Components/")
 
 
     
