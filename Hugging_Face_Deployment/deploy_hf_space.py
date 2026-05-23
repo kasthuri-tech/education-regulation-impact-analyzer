@@ -5,7 +5,7 @@
 # Steps it assists with:
 # 1. Verification of all deployment-ready files.
 # 2. Initializing git locally if not already done.
-# 3. Committing files (app.py, utils.py, requirements.txt, Test_Data).
+# 3. Committing files.
 # 4. Adding your Hugging Face Space repository remote.
 # 5. Pushing to Hugging Face to launch your live public app!
 
@@ -58,7 +58,7 @@ def main():
     git_installed, _ = run_command("git --version")
     if not git_installed:
         print("❌ Git is not installed or not in your system PATH. Please install Git to deploy to Hugging Face Spaces.")
-        print("Alternative: You can manually upload 'app.py', 'utils.py', and 'requirements.txt' directly on Hugging Face's web interface!")
+        print("Alternative: You can manually upload the files directly on Hugging Face's web interface!")
         sys.exit(1)
         
     # Check if git is initialized
@@ -75,7 +75,6 @@ def main():
     
     # Add files (including new modular components and mock dataset)
     run_command("git add streamlit_app.py Document_Ingestion_and_Preprocessing/ LLM_Summarization_and_Impact_Analysis/ Gemini_Model_Integration_and_Testing/ requirements.txt README.md Test_Data/ Streamlit_Dashboard_Components/")
-
 
     
     # Commit files
