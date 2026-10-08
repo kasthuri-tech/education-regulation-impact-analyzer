@@ -101,7 +101,7 @@ with st.sidebar:
     if api_key_input.strip() and api_key_input.strip().upper() != "MOCK":
         if st.button("Test API Connection", use_container_width=True):
             if not validate_gemini_api_key(api_key_input.strip()):
-                st.error("❌ Invalid Key Format. Must start with 'AIzaSy' and be at least 30 characters.")
+                st.error("❌ Invalid Key Format. Please enter a valid Gemini API Key.")
             else:
                 with st.spinner("Testing API connection..."):
                     try:

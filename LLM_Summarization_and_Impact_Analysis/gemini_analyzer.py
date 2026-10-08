@@ -9,9 +9,8 @@ except ImportError:
 def validate_gemini_api_key(api_key):
     if not api_key:
         return False
-    if not api_key.startswith("AIzaSy"):
-        return False
-    if len(api_key) < 30:
+    cleaned_key = api_key.strip()
+    if len(cleaned_key) < 20:
         return False
     return True
 
@@ -19,8 +18,6 @@ def analyze_regulation(text, api_key=None, pdf_bytes=None):
     resolved_api_key = api_key or os.environ.get("GEMINI_API_KEY")
     
     if not resolved_api_key or resolved_api_key.strip() == "" or resolved_api_key.strip().upper() == "MOCK":
-        if pdf_bytes:
-            raise ValueError("Analyzing custom scanned PDFs requires a valid Gemini API Key to run live OCR. Please enter a key in the sidebar.")
         return get_mock_analysis(text)
 
     if not validate_gemini_api_key(resolved_api_key.strip()):
