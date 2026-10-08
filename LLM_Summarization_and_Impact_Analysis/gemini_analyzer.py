@@ -1,7 +1,10 @@
 import os
 import json
 import google.generativeai as genai
-from Gemini_Model_Integration_and_Testing.mock_data import get_mock_analysis
+try:
+    from mock_data import get_mock_analysis
+except ImportError:
+    from Gemini_Model_Integration_and_Testing.mock_data import get_mock_analysis
 
 def validate_gemini_api_key(api_key):
     if not api_key:

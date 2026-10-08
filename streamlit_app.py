@@ -1,17 +1,49 @@
 import streamlit as st
 import os
-from Document_Ingestion_and_Preprocessing.data_extractor import extract_text_from_pdf, scrape_url_content
-from LLM_Summarization_and_Impact_Analysis.gemini_analyzer import analyze_regulation, validate_gemini_api_key
-from Gemini_Model_Integration_and_Testing.mock_data import SAMPLE_DOCUMENTS
-from Streamlit_Dashboard_Components import (
-    render_executive_summary_tab,
-    render_stakeholder_impact_tab,
-    render_policy_timeline_tab,
-    render_forecast_and_readiness_tab,
-    render_export_report_tab,
-    render_comparison_tab,
-    inject_custom_styles
-)
+import sys
+import io
+import re
+import requests
+from bs4 import BeautifulSoup
+import pypdf
+
+# Add project subfolders directly to sys.path
+_current_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in locals() else os.getcwd()
+sys.path.insert(0, os.path.join(_current_dir, "LLM_Summarization_and_Impact_Analysis"))
+sys.path.insert(0, os.path.join(_current_dir, "Gemini_Model_Integration_and_Testing"))
+sys.path.insert(0, os.path.join(_current_dir, "Streamlit_Dashboard_Components"))
+
+from gemini_analyzer import analyze_regulation, validate_gemini_api_key
+from mock_data import SAMPLE_DOCUMENTS
+from executive_summary import render_executive_summary_tab
+from stakeholder_impact import render_stakeholder_impact_tab
+from timeline import render_policy_timeline_tab
+from forecast_readiness import render_forecast_and_readiness_tab
+from export_report import render_export_report_tab
+from comparison import render_comparison_tab
+from styles import inject_custom_styles
+
+def extract_text_from_pdf(uploaded_file):
+    pdf_reader = pypdf.PdfReader(uploaded_file)
+    extracted_text = ""
+    for page in pdf_reader.pages:
+        text = page.extract_text()
+        if text:
+            extracted_text += text + "\n"
+    if not extracted_text.strip():
+        raise ValueError("No text found in PDF")
+    return extracted_text.strip()
+
+def scrape_url_content(url):
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+    response = requests.get(url, headers=headers, timeout=10)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+    for tag in soup(["script", "style", "nav", "footer", "header"]):
+        tag.decompose()
+    text = soup.get_text(separator=" ")
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 # Set page configuration with a premium title and icon
 st.set_page_config(

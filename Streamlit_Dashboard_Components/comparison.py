@@ -1,5 +1,8 @@
 import streamlit as st
-from utils import analyze_regulation
+try:
+    from gemini_analyzer import analyze_regulation
+except ImportError:
+    from LLM_Summarization_and_Impact_Analysis.gemini_analyzer import analyze_regulation
 
 def render_comparison_tab(all_analyzed_documents, api_key_input):
     """
