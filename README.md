@@ -12,7 +12,7 @@ pinned: false
 # Education Regulation Impact Analyzer (ERIA) 🎓⚖️
 
 > **Simplifying Education Policies, Accreditation Guidelines, and Academic Circulars for Every Institution.**
-
+📌 Note: Built during my data science program using a practice dataset. The end-to-end implementation, modeling, and application were independently developed.
 
 ---
 
