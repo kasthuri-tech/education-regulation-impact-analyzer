@@ -12,8 +12,10 @@ pinned: false
 # Education Regulation Impact Analyzer (ERIA) 🎓⚖️
 
 > **Simplifying Education Policies, Accreditation Guidelines, and Academic Circulars for Every Institution.**
-📌 Note: Built during my data science program using a practice dataset. The end-to-end implementation, modeling, and application were independently developed.
 
+📌 Note: Built during my data science program using a practice dataset. The end-to-end implementation, modeling, and application were independently developed.
+### 🌐 Live Application
+👉 **[Try the Live App on Hugging Face Spaces](https://huggingface.co/spaces/kasthuri001/education-regulation-impact-analyzer)**
 ---
 
 ## 📖 Project Overview
@@ -77,9 +79,9 @@ graph TD
 
 ---
 
-## 🏷️ Technical Tags & Capstone Skill Mapping
+##  🛠️ Core Technical Architecture & Skills
 
-To ensure strict compliance with the **GUVI / HCL Capstone Curriculum**, this project utilizes and implements the following core technical concepts:
+This application utilizes and implements the following core technical concepts:
 
 ### 1. 🧠 Natural Language Processing (NLP) & Education NLP
 *   **Implementation:** Cleans, extracts, and parses heavy academic language and complex educational circulars. We utilize regular expressions and text normalizers in `utils.py` to prepare raw scraped HTML and PDF transcript texts for structural linguistic processing.
